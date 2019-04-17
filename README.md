@@ -11,12 +11,14 @@ In order to map the frequency of occurrence to a the range `[0 -> 100]` I simply
 `100 - (% of keyword used to search)` so, if its the first keystroke its `100-0` and if its the complete word 
 its `100 - ((lengthOfKeyword-1)/lengthOfKeyword * 100)` which will be very close to zero, and if the keyword is never found
 the score is `0`. 
+
+
 ----
 
 ### 1. What assumptions did you make?
 
 The most important assumption is that the auto-complete API will ALWAYS return keywords that users are searching for,
-for rare keywords, they will appear when we search for the whole string. And that also means that if the API does suggest
+for rare keywords, they will appear when we search for the whole string. And that also means that if the API does not suggest
 a word, users are not searching for it. 
 
 ### 2. How does the algorithm work? 
