@@ -1,0 +1,8 @@
+server:
+    port: 8080
+    connection-timeout:  10s
+
+amazon:
+    host: completion.amazon.com
+    api: api/2017/suggestions
+
